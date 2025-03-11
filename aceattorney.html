@@ -1,0 +1,45 @@
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/brython@3.13.0/brython.min.js">
+    </script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/brython@3.13.0/brython_stdlib.js">
+    </script>
+</head>
+
+<body>
+
+<script type="text/python">
+
+jeu = "Ace Attorney (逆転裁判, Gyakuten Saiban) est une série de jeux d'aventure développée et éditée par Capcom s'inspirant grandement des caractéristiques des visual novels — romans vidéoludiques en français — au point qu'une grande partie des fans de la série considèrent que ces jeux en sont. Le premier épisode, Phoenix Wright: Ace Attorney, est commercialisé en 2001 sur Game Boy Advance. Les épisodes mettent en scène l'aventure de Phoenix Wright, jeune avocat prometteur, ainsi que ses associés Apollo Justice ou Athena Cykes. Une série dérivée prenant pour vedette le rival de Phoenix, Miles Edgeworth, est sortie sous le nom Ace Attorney: Investigations. La série a été réalisée par l'écrivain Shu Takumi, qui sera à la tête des quatre premiers jeux de la série principale, avant de passer la main à Takeshi Yamasaki à partir de Phoenix Wright: Ace Attorney - Dual Destinies. Takumi aidera néanmoins à la réalisation des spin-off The Great Ace Attorney, et du crossover Professeur Layton vs. Phoenix Wright: Ace Attorney."
+
+elements1 = ["Phoenix Wright: Ace Attorney","Phoenix Wright: Ace Attorney - Justice for all","Phoenix Wright: Ace Attorney - Trials and Tribulations"]
+elements2 = ["Apollo Justice: Ace Attorney","Phoenix Wright: Ace Attorney - Dual Destinies","Phoenix Wright: Ace Attorney - Spirit of Justice"]
+
+resume = "Le joueur prendra le contrôle d'un avocat de la défense, devant innocenter son client accusé d'un crime. Durant les phases d'enquête, il faudra récolter des preuves, et obtenir des informations avec les différents témoins. Ensuite, viennent les phases de procès. Cette fois-ci, il faut écouter les témoignages et passer au contre-interrogatoire : le joueur doit attaquer la déposition du témoin afin d'avoir plus de détails. Si le témoignage contient une contradiction, il faut présenter une preuve du dossier de l'affaire qui ne correspond pas à la version du témoin. Il faut ainsi trouver le véritable meurtrier, et obtenir un verdict non coupable."
+
+pw = "Phoenix Wright: Ace Attorney (逆転裁判 蘇る逆転, Gyakuten Saiban : Yomigaeru Gyakuten) est un jeu vidéo développé et édité par l'entreprise japonaise Capcom. Il est d'abord sorti sur Game Boy Advance en 2001 au Japon. Le jeu est porté sur Nintendo DS en 2005 au Japon puis en 2006 en Occident. Malgré la construction assez inhabituelle du jeu pour l'Occident, cette version rencontre un succès critique et commercial. Le joueur y incarne un avocat débutant, Phoenix Wright, au cours de quatre affaires, dans lesquelles il devra prouver l'innocence de ses clients à force de preuves et de contre-interrogatoires. La version Nintendo DS ajoute un cinquième chapitre. Le jeu est par la suite réédité sur Windows en 2005, téléphone mobile en 2007, et WiiWare en 2009/2010. Le jeu est sorti sur iPhone et iPod Touch en 2010, puis a été remastérisé en haute définition et rendu disponible en France le 30 mai 2013 dans l'App Store et le 9 avril 2019 sur Switch, PlayStation 4, Xbox One et Steam en tant que premier volet de la Trilogie." 
+
+from browser import document, html
+
+document <= html.H1("La série Ace Attorney")
+document <= jeu
+li1 = html.UL(html.LI(element)for element in elements1)
+document <= li1
+li2 = html.UL(html.LI(element)for element in elements2)
+document <= li2
+document <= html.H4(html.I("Résumé de l'intrigue :"))
+document <= resume
+document <= html.H4(html.I("Phoenix Wright : Ace Attorney :"))
+document <= pw
+
+</script>
+
+
+</body>
+
+</html>
