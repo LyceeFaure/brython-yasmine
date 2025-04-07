@@ -1,0 +1,279 @@
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="aceattorneycss.css">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/brython@3.13.0/brython.min.js">
+    </script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/brython@3.13.0/brython_stdlib.js">
+    </script>
+</head>
+
+<body>
+
+<script type="text/python">
+
+from browser import document, html
+
+jeu1 = html.P("Ace Attorney (逆転裁判, Gyakuten Saiban) est une série de jeux d'aventure développée et éditée par Capcom s'inspirant grandement des caractéristiques des visual novels — romans vidéoludiques en français — au point qu'une grande partie des fans de la série considèrent que ces jeux en sont. Le premier épisode, Phoenix Wright: Ace Attorney, est commercialisé en 2001 sur Game Boy Advance. Les épisodes mettent en scène l'aventure de Phoenix Wright, jeune avocat prometteur, ainsi que ses associés Apollo Justice ou Athena Cykes. Une série dérivée prenant pour vedette le rival de Phoenix, Miles Edgeworth, est sortie sous le nom Ace Attorney: Investigations et est composée de deux jeux.")
+
+jeu2 = html.P("La série a été réalisée par l'écrivain Shu Takumi, qui sera à la tête des quatre premiers jeux de la série principale, avant de passer la main à Takeshi Yamasaki à partir de Phoenix Wright: Ace Attorney - Dual Destinies. Takumi aidera néanmoins à la réalisation des spin-off The Great Ace Attorney, et du crossover Professeur Layton vs. Phoenix Wright: Ace Attorney.")
+
+jeu3 = html.P("L'intrigue principale est donc composée de deux trilogies :")
+
+elements1 = ["Phoenix Wright: Ace Attorney","Phoenix Wright: Ace Attorney - Justice For All","Phoenix Wright: Ace Attorney - Trials and Tribulations"]
+elements2 = ["Apollo Justice: Ace Attorney","Phoenix Wright: Ace Attorney - Dual Destinies","Phoenix Wright: Ace Attorney - Spirit of Justice"]
+
+jeu4 = html.P("Une autre série de deux jeux hors série est également sortie sous le nom de The Great Ace Attorney.")
+
+resume = html.P("Le joueur prendra le contrôle d'un avocat de la défense, devant innocenter son client accusé d'un crime. Durant les phases d'enquête, il faudra récolter des preuves, et obtenir des informations avec les différents témoins. Ensuite, viennent les phases de procès. Cette fois-ci, il faut écouter les témoignages et passer au contre-interrogatoire : le joueur doit attaquer la déposition du témoin afin d'avoir plus de détails. Si le témoignage contient une contradiction, il faut présenter une preuve du dossier de l'affaire qui ne correspond pas à la version du témoin. Il faut ainsi trouver le véritable meurtrier, et obtenir un verdict non coupable.")
+
+pw1 = html.P("Phoenix Wright: Ace Attorney (逆転裁判 蘇る逆転, Gyakuten Saiban : Yomigaeru Gyakuten) est un jeu vidéo développé et édité par l'entreprise japonaise Capcom. Il est d'abord sorti sur Game Boy Advance en 2001 au Japon. Le jeu est porté sur Nintendo DS en 2005 au Japon puis en 2006 en Occident. Malgré la construction assez inhabituelle du jeu pour l'Occident, cette version rencontre un succès critique et commercial. Le joueur y incarne un avocat débutant, Phoenix Wright, au cours de quatre affaires, dans lesquelles il devra prouver l'innocence de ses clients à force de preuves et de contre-interrogatoires. La version Nintendo DS ajoute un cinquième chapitre. Le jeu est par la suite réédité sur Windows en 2005, téléphone mobile en 2007, et WiiWare en 2009/2010. Le jeu est sorti sur iPhone et iPod Touch en 2010, puis a été remastérisé en haute définition et rendu disponible en France le 30 mai 2013 dans l'App Store et le 9 avril 2019 sur Switch, PlayStation 4, Xbox One et Steam en tant que premier volet de la Trilogie.")
+
+pw2 = html.P("Le jeu est présenté sous forme de jeu d'aventure textuel. Sur Nintendo DS, la navigation dans les menus se fait à l'aide de l'écran tactile et des classiques croix et boutons. Chaque cas comporte deux phases distinctes : les phases d'enquête, et les phases de procès ; chaque nouveau jour du chapitre comportant chacune d'entre elles une fois. Lors des premières, Phoenix doit explorer les lieux du crime à la recherche d'indices et d'informations pour étoffer le dossier de l'affaire - il peut alors se déplacer dans les différents endroits, les examiner, parler et présenter des objets aux personnes présentes sur les lieux. Il devra ensuite réutiliser ces preuves lors des phases de procès, afin d'exposer les contradictions et les mensonges des différents témoins pour innocenter son client. Attention toutefois à ne pas s'emporter : si le joueur présente un indice au mauvais moment, il sera réprimandé par le juge car sa crédibilité sera entachée.")
+
+pwc = ["La première volte-face (はじめての逆転, Hajimete no Gyakuten)", "La volte-face des sœurs (逆転姉妹, Gyakuten Shimai)", "La volte-face du Samouraï (逆転のトノサマン, Gyakuten no Tonosaman)", "Adieux et volte-face (逆転、そしてサヨナラ, Gyakuten, Soshite Sayonara)", "Phoenix renaît de ses cendres (蘇る逆転, Yomigaeru Gyakuten)"]
+
+pwjfa1 = html.P("Phoenix Wright: Ace Attorney - Justice for All (逆転 裁判 2, Gyakuten Saiban 2) est un jeu vidéo d'aventure sorti sur Game Boy Advance en 2002 au Japon. Le jeu est porté sur Nintendo DS en 2006 au Japon et en 2007 en Occident dans une version qui connait un certain succès. Il est également réédité au Japon sur Windows en 2006 puis Wiiware en 2010. Le jeu se déroule un an après le premier épisode et le joueur y incarne toujours Phoenix Wright, un avocat débutant, au cours de quatre affaires, dans lesquelles il devra prouver l'innocence de ses clients à force de preuves et de contre-interrogatoires.")
+
+pwjfa2 = html.P("Le jeu présente le même gameplay que dans l'épisode précédent, il est présenté sous forme de jeu d'aventure textuel avec des phases de dialogue et d'exploration. Le personnage garde en mémoire les témoignages des accusés et des témoins, ainsi que les objets et preuves concernant le crime, et doit démontrer les contradictions du coupable en l'interrogeant sur un point précis de sa déclaration, et en montrant un objet (ou en posant les questions adéquates) qui le poussent à l'aveu. Le joueur peut maintenant présenter les profils des personnages comme preuves. Autre nouveauté de cet épisode, le Magatama qui fait apparaitre des verrous psychés lorsqu'un personnage ment ou cache des informations au joueur. En lui présentant le Magatama et les bonnes preuves, les verrous psychés se brisent et le personnage révèle certaines informations.")
+
+pwjfac = ["La volte-face perdue (失われた逆転, Ushinawareta Gyakuten)", "Réunion, et volte-face (再会、そして逆転, Saikai, Soshite Gyakuten)", "Volte-face circus (逆転サーカス, Gyakuten Sākasu)", "Adieu ma volte-face (さらば、逆転, Saraba, Gyakuten)"]
+
+pwtat1 = html.P("Phoenix Wright: Ace Attorney - Trials and Tribulations (逆転 裁判 3, Gyakuten Saiban 3) est un jeu vidéo d'aventure et troisième volet de la série Ace Attorney, sorti sur Game Boy Advance en 2004 au Japon. Le jeu est porté sur Nintendo DS en 2007 au Japon et aux États-Unis et en 2008 en Europe. Il est également réédité uniquement au Japon sur Windows en 2006 puis Wiiware en 2010. Le joueur y incarne deux avocats, Phoenix Wright et Mia Fey (à travers des flashbacks), au cours de cinq affaires, dans lesquelles ils devront prouver l'innocence de leurs clients à force de preuves et de contre-interrogatoires.")
+
+pwtat2 = html.P("Le jeu présente le même gameplay que dans les deux épisodes précédents et est présenté sous forme de jeu d'aventure textuel avec des phases de dialogue et d'exploration. Le personnage garde en mémoire les témoignages des accusés et des témoins, ainsi que les objets et preuves concernant le crime, et doit démontrer les contradictions du coupable en l'interrogeant sur un point précis de sa déclaration, et en montrant un objet (ou en posant les questions adéquates) qui le poussent à l'aveu. Le joueur peut toujours présenter les profils des personnages comme preuves et utiliser le Magatama. Ce dernier fait apparaitre des verrous psychés lorsqu'un personnage ment ou cache des informations au joueur. En lui présentant le magatama et les bonnes preuves, les verrous psychés se brisent et le personnage révèle certaines informations. Par effet scénaristique, le joueur en viendra à incarner d'autres personnages, notamment Mia Fey, le mentor de Phoenix, dans des affaires précédant son décès.")
+
+pwtatc = ["Souvenirs et volte-face (思い出の逆転, Omoide no Gyakuten)", "La volte-face volée (盗まれた逆転, Nusumareta Gyakuten)", "Recette de volte-face (逆転のレシピ, Gyakuten no Reshipi)", "La volte-face initiale (始まりの逆転, Hajimari no Gyakuten)", "Le pont des volte-face (華麗なる逆転, Kareinaru Gyakuten)"]
+
+aj1 = html.P("Apollo Justice: Ace Attorney (逆転 裁判 4, Gyakuten Saiban 4) est un jeu vidéo d'aventure sorti sur Nintendo DS en 2007 au Japon puis en 2008 en Occident. Il est réédité sur Nintendo 3DS fin 2017 en dématérialisé et uniquement en anglais. Le jeu sort ensuite le 25 janvier 2024 sur Nintendo Switch, PlayStation 4 et Xbox One dans la compilation Apollo Justice: Ace Attorney Trilogy. Le joueur incarne désormais Apollo Justice, un jeune avocat qui doit mener l'enquête et défendre ses clients au tribunal.")
+
+aj2 = html.P("Le système de jeu est identique aux volets précédents mais des ajouts ont été apportés spécialement afin d'utiliser les possibilités de la Nintendo DS, notamment l'observation de pièces à conviction en 3D qui peut s'effectuer au stylet ou à la manette directionnelle, à l'instar du dernier épisode de Phoenix Wright: Ace Attorney. Les aspects de police scientifique sont mis en avant notamment par la découverte d'empreintes digitales, d'empreintes de pied, de superposition de couches de peinture ou d'analyse sonore. La grande nouveauté de cet épisode, est le bracelet d'Apollo qui lui permet d'intensifier son intuition et de tenter de dévoiler les tics des témoins lors de leurs témoignages. Lors de son utilisation, le joueur 'zoome' sur la partie du corps dévoilant des tics à un moment précis du témoignage, puis peut activer en appuyant sur le bouton approprié ou en utilisant le microphone en disant : 'J'te Tiens !' ('Gotcha!' en anglais).")
+
+ajc = ["Atout et volte-face (逆転の切札, Gyakuten no Kirifuda)", "Boulevard des volte-face (逆転連鎖の街角, Gyakuten Rensa no Machikado)", "Volte-face et sérénade (逆転のセレナード, Gyakuten no Serenādo)", "Volte-face et succession (逆転を継ぐ者, Gyakuten o Tsugu Mono)"]
+
+pwdd1 = html.P("Phoenix Wright: Ace Attorney - Dual Destinies (逆転 裁判 5, Gyakuten Saiban 5) est un jeu vidéo d'aventure sorti le 25 juillet 2013 au Japon sur Nintendo 3DS1, et le 24 octobre 2013 en Amérique du Nord et en Europe en version dématérialisée anglaise sur le Nintendo eShop. Le jeu sort ensuite le 25 janvier 2024 sur Nintendo Switch, PlayStation 4 et Xbox One dans la compilation Apollo Justice: Ace Attorney Trilogy. Le jeu marque le retour de Phoenix Wright en personnage principal.")
+
+pwdd2 = html.P("Le système de jeu est similaire aux quatre opus précédents de la série Ace Attorney, avec quelques différences notables. Chaque avocat possède son propre 'pouvoir' : Phoenix Wright a la possibilité de discerner la vérité dissimulée par le biais des 'verrous-psyché'. Apollo Justice, grâce à son bracelet, peut déceler les tics de nervosité des témoins. La nouvelle avocate, Athena Cykes, utilise une application informatique appelée Lunatrix qui dévoile les sentiments basiques lors d'un témoignage : joie, tristesse, peur, colère. Charge au joueur de déceler des incohérences entre la portion de témoignages et des variations des sentiments, voire des comportements contradictoires. D'autres modifications sont apportées comme les notes qui permettent de savoir quelles sont les tâches à effectuer, un résumé de l'affaire (victime, suspect). Lors des phases de procès, si trop d'erreurs sont commises lors de la présentation de preuve, il est possible de consulter son partenaire qui indique quelle phrase en particulier contient une incohérence. Enfin, il existe des séquences de 'Revisualisation' sous la forme d'un QCM dans lequel le personnage peut coordonner les dernières pièces du puzzle pour aboutir à la conclusion.")
+
+pwddc = ["Volte-face à rebours (逆転のカウントダウ, Gyakuten no Kauntodaun)", "La volte-face monstrueuse (逆転の百鬼夜行, Gyakuten no Hyakkiyakō)", "Volte-face sur les bancs (逆転学園, Gyakuten gakuen)", "Volte-face cosmique (星になった逆転, Hoshi ni Natta Gyakuten)", "Demain est une autre volte-face (未来への逆転, Mirai e no Gyakuten)", "Volte-face à la barre (逆転の帰還, Gyakuten no Kikan)"]
+
+pwsoj1 = html.P("Phoenix Wright: Ace Attorney - Spirit of Justice (逆転裁判 6, Gyakuten Saiban 6) est un jeu vidéo d'aventure sorti le 9 juin 2016 au Japon et le 8 septembre 2016 en Amérique du Nord et en Europe en version dématérialisée anglaise sur le Nintendo eShop sur Nintendo 3DS. Le jeu sort ensuite le 25 janvier 2024 sur Nintendo Switch, PlayStation 4 et Xbox One dans la compilation Apollo Justice: Ace Attorney Trilogy.")
+
+pwsoj2 = html.P("Le système reprend en grande partie les nouveautés de l'opus précédent, avec quelques rajouts, notamment les séances de divination permettant de visionner les derniers instants d'une victime. Le jeu marque également le retour des enquêtes scientifiques avec Ema Skye, vue pour la dernière fois dans Apollo Justice avec, entre autres, le Luminol, pouvant réagir aux traces de sang sur une scène de crime, ou la détection d'empreintes digitales. Lors des phases de procès au royaume du Khura'in avec Phoenix, le procès retrouve le système de points de Phoenix Wright: Ace Attorney qu'il avait abandonné. Les autres phases de procès, avec Apollo et Athena, se jouent de façon classique.")
+
+pwsojc = ["La volte-face étrangère (逆転の異邦人, Gyakuten no Ihōjin)", "La volte-face magqiue (逆転マジックショー, Gyakuten majikkushō)", "La volte-face rituelle (逆転の儀式, Gyakuten no Gishiki)", "Volte-face et rakugo (逆転寄席, Gyakuten Yose)", "Volte-face et révolution (逆転の大革命, Gyakuten no Dai Kakumei)", "Retour vers la volte-face (時を越える逆転, Toki o Koeru Gyakuten)"]
+
+aaime1 = html.P("Ace Attorney Investigations: Miles Edgeworth, connu au Japon sous le nom de Gyakuten Kenji (逆転検事) est un jeu vidéo d'aventure développé et édité par l'entreprise japonaise Capcom. Il sort sur Nintendo DS en 2009. Il s'agit d'un spin-off de la série Ace Attorney. Dans ce volet, le joueur passe de la défense à l'accusation en contrôlant le procureur Miles Edgeworth (Reiji Mitsurugi dans la version japonaise).")
+
+aaime2 = html.P("Dans l'ensemble, le gameplay est plus ou moins semblable à celui des épisodes précédents : des aventures textuelles de type Point & click. Cependant, le jeu a subi de nombreuses modifications, par exemple avec la disparition totale des procès qui sont remplacés par des passages de réflexion individuelle dans lesquels le joueur doit croiser logiquement les éléments connus de l'affaire pour en apprendre un peu plus sur le crime.")
+
+aaimec = ["Volte-face et intrusion (逆転の来訪者, Gyakuten no Raihō-sha)", "Volte-face de haut vol (逆転エアライン, Gyakuten Earain)", "Volte-face et réminiscences (さらわれる逆転, Sarawa Reru Gyakuten)", "Volte-face et embrasement (燃え上がる逆転, Moeagaru Gyakuten)"]
+
+aai2pg1 = html.P("Ace Attorney Investigations 2: Le pari du procureur, connu au Japon sous le nom de Gyakuten Kenji 2 (逆転検事2) et ailleurs sous le nom de Ace Attorney Investigations 2: Prosecutor's gambit, est un jeu vidéo d'aventure développé et édité par Capcom. Il s'agit de la suite du premier volet Ace Attorney Investigations: Benjamin Hunter, spin-off de la série Ace Attorney. Le jeu est sorti le 3 février 2011 sur Nintendo DS, uniquement au Japon.")
+
+aai2pg2 = html.P("Miles Edgeworth poursuit ses aventures dans cinq nouvelles affaires. Il est toujours assisté de ses fidèles camarades, l'inspecteur Dick Gumshoe et l'apprentie 'voleuse de vérité' Kay Faraday. Il a pour rivale dans cet opus une juge implacable, Verity Gavèlle, dont la vision de l'application de la Justice est antagoniste à celle d'Edgeworth, pour qui la vérité prévaut sur la restriction des lois. Agissant de concert avec un Conseil rassemblant d'autres des plus hauts dignitaires de la magistrature, elle sera entièrement dévouée à le dessaisir de ses affaires pour le remplacer par un jeune procureur inexpérimenté, Eustace Winner. Miles Edgeworth sera une fois de plus confronté à des choix qui définiront la justesse de son chemin dans la vie, ses buts, et les moyens qu'il faut employer pour faire ce en quoi il croit.")
+
+aai2pgc = ["Volte-face et point de mire (逆転の標的, Gyakuten no Hyōteki)", "Volte-face et détention (獄中の逆転, Gokuchū no Gyakuten)", "Volte-face et ascendance (受け継がれし逆転, Uketsuga Reshi Gyakuten)", "Volte-face et rémission (忘却の逆転, Bōkyaku no Gyakuten)", "Volte-face et consécration (大いなる逆転, Ōinaru Gyakuten)"]
+
+tgaaa1 = html.P("The Great Ace Attorney: Adventures (大逆転裁判 ‐成歩堂龍ノ介の冒険‐, Dai Gyakuten Saiban: Naruhodō Ryūnosuke no Bōken) est un jeu vidéo d'aventure développé et édité par Capcom, sorti en 2015 au Japon sur Nintendo 3DS et en 2017 sur Android et iOS. Il s'agit d'un spin-off de la série Ace Attorney se déroulant à la fin du 19e siècle au Japon et en Angleterre.")
+
+tgaaa2 = html.P("The Great Ace Attorney: Adventures est un visual novel (jeu textuel) pouvant être joué sur la Nintendo 3DS à l'aide des deux écrans de la console. Les boutons ont aussi leur utilité: présenter des preuves, avancer dans les dialogues, etc. Comme les précédents jeux, il existe deux parties de gameplay : les phases d'enquêtes et les procès. La première consiste à interroger les différents témoins liés à l'affaire dans laquelle Ryūnosuke Naruhodō enquête, et où le joueur doit également récolter des preuves. Durant les procès, l'avocat doit contre-interroger différents témoins et présenter les preuves précédemment récoltées lorsqu'une contradiction est présente dans le témoignage du témoin. Dans cet opus, deux nouveaux mécanismes de gameplay ont été ajoutés au jeu : la danse de la déduction et l'examen sommatif. Au cours de certaines enquêtes, Herlock Sholmes, un détective britannique que Ryūnosuke rencontre lors de son voyage en Angleterre, effectuera un 'Spectacle de logique et de raisonnement', dans lequel il va émettre une théorie erronée basée sur l'observation de la scène et le comportement des témoins. Le joueur doit donc examiner attentivement la scène et les témoins pour corriger les erreurs d'Herlock afin de parvenir à une conclusion plus logique. L'introduction d'un jury dans cet opus constitue le deuxième mécanisme. Le jury, qui est un aspect des procès en Angleterre, décidera à l'unanimité d'un verdict de culpabilité. Le joueur doit alors convaincre la majorité du jury de modifier son verdict en comparant les déclarations de deux jurés différents qui se contredisent. Pour se faire, le joueur doit faire pression sur chaque juré et présenter des preuves pour révéler les contradictions dans leur déclaration.")
+
+tgaaa3 = html.P("Comparé aux jeux précédents, cet opus n'a pas de système d'affaires : toute l'histoire se déroule donc dans un seul épisode.")
+
+tgaar1 = html.P("The Great Ace Attorney 2: Resolve (大逆轉裁判2 -成步堂龍之介的覺悟-, Dai Gyakuten Saiban 2: Naruhodō Ryūnosuke no Kakugo) est un jeu vidéo d'aventure développé et édité par Capcom, sorti en 2017 sur Nintendo 3DS, iOS et Android. Il s'agit d'un épisode dérivé de la série Ace Attorney et fait suite à The Great Ace Attorney: Adventures.")
+
+tgaar2 = html.P("Le système de jeu est globalement similaire à celui du premier volet, The Great Ace Attorney: Adventures.")
+
+tgaar3 = html.P("Comme le premier volet, cet opus n'a pas de système d'affaires.")
+
+plvspw = html.P("Professeur Layton vs. Phoenix Wright: Ace Attorney (レイトン教授VS逆転裁判, Layton Kyôju tai Gyakuten Saiban) est un jeu vidéo crossover entre deux séries vidéoludiques sorties auparavant sur Nintendo DS, Professeur Layton et Ace Attorney. Il est sorti sur Nintendo 3DS le 29 novembre 2012 aufrom browser import document, html Japon, et le 28 mars 2014 en Europe.")
+
+plvspwc = ["Par une sombre nuit d'orage", "Volte-face à Londres (異国の法廷)", "Labyrinthia, la cité mystérieuse (迷宮の町)", "La sorcière du feu (豪炎の魔女裁判)", "La grande sorcière (大魔女のナゾを追え)", "La cour dorée (黄金の魔女裁判)", "Au bord du désespoir (失意の後に)", "Les secrets des ruines souterraines (地下遺跡のヒミツ)", "La fin de l'histoire (終わる物語)", "L'ultime procès des sorcières (最後の魔女裁判)", "La dernière inquisitrice (最後の検察士)", "Le commencement (はじまりの物語)"]
+
+
+
+document <= html.H1("Ace Attorney, une série de jeux à succès")
+document <= html.IMG(src="https://www.nautiljon.com/images/jeuxvideo/00/58/phoenix_wright_ace_attorney_trilogy_2785.jpg", width="500px")
+document <= html.BR()
+document <= html.BR()
+document <= jeu1
+document <= jeu2
+document <= jeu3
+document <= html.P("La trilogie Phoenix Wright :")
+li1 = html.UL(html.LI(element)for element in elements1)
+document <= li1
+document <= html.P("La trilogie Apollo Justice :")
+li2 = html.UL(html.LI(element)for element in elements2)
+document <= li2
+document <= jeu4
+document <= html.H4(html.I("Résumé de l'intrigue :"))
+document <= resume
+document <= html.H1("Les différents jeux")
+document <= html.B("La trilogie Phoenix Wright :")
+document <= html.H4(html.I("Phoenix Wright: Ace Attorney :"))
+document <= html.IMG(src="https://m.media-amazon.com/images/I/61KmjMh5ShL.jpg", width="250px")
+document <= html.BR()
+document <= html.BR()
+document <= pw1
+document <= pw2
+document <= html.P("Le premier opus est composé de 5 affaires différentes :")
+li3 = html.UL(html.LI(element)for element in pwc)
+document <= li3
+document <= html.H4(html.I("Phoenix Wright: Ace Attorney - Justice For All :"))
+document <= html.IMG(src="https://static.wikia.nocookie.net/aceattorney/images/0/06/JFA_Jaquette.webp/revision/latest?cb=20220905192104&path-prefix=fr", width="250px")
+document <= html.BR()
+document <= html.BR()
+document <= pwjfa1
+document <= pwjfa2
+document <= html.P("Le deuxième opus est composé de 4 affaires différentes :")
+li4 = html.UL(html.LI(element)for element in pwjfac)
+document <= li4
+document <= html.H4(html.I("Phoenix Wright: Ace Attorney - Trials and Tribulations :"))
+document <= html.IMG(src="https://m.media-amazon.com/images/I/71gQLz4ycvL.jpg", width="250px")
+document <= html.BR()
+document <= html.BR()
+document <= pwtat1
+document <= pwtat2
+document <= html.P("Le troisième opus est composé de 5 affaires différentes :")
+li5 = html.UL(html.LI(element)for element in pwtatc)
+document <= li5
+document <= html.B("La trilogie Apollo Justice :")
+document <= html.H4(html.I("Apollo Justice: Ace Attorney :"))
+document <= html.IMG(src="https://static.wikia.nocookie.net/ace-attorney-fr/images/f/f0/AJ_Couverture.png/revision/latest/thumbnail/width/360/height/450?cb=20191022160751&path-prefix=fr", width="250px")
+document <= html.BR()
+document <= html.BR()
+document <= aj1
+document <= aj2
+document <= html.P("Le quatrième opus est composé de 4 affaires différentes :")
+li6 = html.UL(html.LI(element)for element in ajc)
+document <= li6
+document <= html.H4(html.I("Phoenix Wright: Ace Attorney - Dual Destinies :"))
+document <= html.IMG(src="https://mail.jeuxmangas.com/local/cache-vignettes/L300xH267/ace_attorney-c095d.webp?1698507478", width="250px")
+document <= html.BR()
+document <= html.BR()
+document <= pwdd1
+document <= pwdd2
+document <= html.P("Le cinquième opus est composé de 5 affaires différentes, plus 1 hors série :")
+li7 = html.UL(html.LI(element)for element in pwddc)
+document <= li7
+document <= html.H4(html.I("Phoenix Wright: Ace Attorney - Spirit of Justice :"))
+document <= html.IMG(src="https://image.jimcdn.com/app/cms/image/transf/dimension=1920x400:format=jpg/path/sbc377a3ba30e8f9f/image/idc5ce31430a5906b/version/1572660473/image.jpg", width="250px")
+document <= html.BR()
+document <= html.BR()
+document <= pwsoj1
+document <= pwsoj2
+document <= html.P("Le sixième opus est composé de 5 affaires différentes, plus 1 hors série :")
+li8 = html.UL(html.LI(element)for element in pwsojc)
+document <= li8
+document <= html.B("La série Investigations :")
+document <= html.H4(html.I("Ace Attorney Investigations: Miles Edgeworth :"))
+document <= html.IMG(src="https://upload.wikimedia.org/wikipedia/en/0/0d/Ace_Attorney_Investigations_Miles_Edgeworth_Game_Cover.jpg", width="250px")
+document <= html.BR()
+document <= html.BR()
+document <= aaime1
+document <= aaime2
+document <= html.P("Le premier opus est composé de 5 affaires différentes :")
+li9 = html.UL(html.LI(element)for element in aaimec)
+document <= li9
+document <= html.H4(html.I("Ace Attorney Investigations 2: Prosecutor's Gambit :"))
+document <= html.IMG(src="https://i.redd.it/00nc1nxzqb481.png", width="250px")
+document <= html.BR()
+document <= html.BR()
+document <= aai2pg1
+document <= aai2pg2
+document <= html.P("Le deuxième opus est composé de 5 affaires différentes :")
+li10 = html.UL(html.LI(element)for element in aai2pgc)
+document <= li10
+document <= html.B("The Great Ace Attorney: Chronicles :")
+document <= html.BR()
+document <= html.BR()
+document <= html.IMG(src="https://static.wikia.nocookie.net/aceattorney/images/4/48/SHERLOCKHOLMESQUEMIERDA.png/revision/latest/thumbnail/width/360/height/360?cb=20160602211742&path-prefix=es", width="250px")
+document <= html.BR()
+document <= html.BR()
+document <= html.P("Ce jeu regroupe les deux opus The Great Ace Attorney : The Great Ace Attorney: Adventures et The Great Ace Attorney: Resolve.")
+document <= html.H4(html.I("The Great Ace Attorney: Adventures :"))
+document <= tgaaa1
+document <= tgaaa2
+document <= tgaaa3
+document <= html.H4(html.I("The Great Ace Attorney: Resolve :"))
+document <= tgaar1
+document <= tgaar2
+document <= tgaar3
+document <= html.B("Professor Layton vs. Phoenix Wright: Ace Attorney :")
+document <= html.BR()
+document <= html.BR()
+document <= html.IMG(src="https://m.media-amazon.com/images/I/81ltTKupQeL.jpg", width="250px")
+document <= html.BR()
+document <= html.BR()
+document <= plvspw
+document <= html.P("Cet opus est composé de 12 affaires différentes :")
+li11 = html.UL(html.LI(element)for element in plvspwc)
+document <= li11
+document <= html.H1("Liens externes")
+document <= html.P("Voilà, maintenant vous connaissez tout sur cette série de jeux ! Vous pouvez consulter ici différents liens si vous souhaitez en apprendre encore plus sur les jeux, ou si vous souhaitez vous les procurer.")
+document <= html.BR()
+document <= html.B("Trailers :")
+document <= html.BR()
+document <= html.BR()
+link5 = html.A("Ace Attorney: Phoenix Wright Trilogy - Trailer", href="https://www.youtube.com/watch%3Fv%3DQY7EDGd_B50")
+document <= link5
+document <= html.BR()
+link6 = html.A("Ace Attorney: Apollo Justice Trilogy - Trailer", href="https://www.youtube.com/watch%3Fv%3DQg_PfX5D_R8")
+document <= link6
+document <= html.BR()
+link7 = html.A("Ace Attorney Investigations Collection - Trailer", href="https://www.youtube.com/watch%3Fv%3DPLFMaakr_xg")
+document <= link7
+document <= html.BR()
+link8 = html.A("The Great Ace Attorney Chronicles - Trailer", href="https://www.youtube.com/watch%3Fv%3D68dOTCiez5I")
+document <= link8
+document <= html.BR()
+link9 = html.A("Professor Layton vs. Phoenix Wright: Ace Attorney - Trailer", href="https://www.youtube.com/watch%3Fv%3DfiJ7JwwlG6o")
+document <= link9
+document <= html.BR()
+document <= html.BR()
+document <= html.B("Liens Steam pour se procurer les jeux :")
+document <= html.BR()
+document <= html.BR()
+link1 = html.A("Ace Attorney: Phoenix Wright Trilogy", href="https://store.steampowered.com/app/787480/Phoenix_Wright_Ace_Attorney_Trilogy/")
+document <= link1
+document <= html.BR()
+link2 = html.A("Ace Attorney: Apollo Justice Trilogy", href="https://store.steampowered.com/app/2187220/Apollo_Justice_Ace_Attorney_Trilogy/")
+document <= link2
+document <= html.BR()
+link3 = html.A("Ace Attorney Investigations Collection", href="https://store.steampowered.com/app/2401970/Ace_Attorney_Investigations_Collection/")
+document <= link3
+document <= html.BR()
+link4 = html.A("The Great Ace Attorney Chronicles", href="https://store.steampowered.com/app/1158850/The_Great_Ace_Attorney_Chronicles/%3Fl%3Dfrench")
+document <= link4
+document <= html.BR()
+document <= html.P("En revanche, le jeu Professor Layton vs. Phoenix Wright: Ace Attorney n'est disponible que sur Nintendo 3DS.")
+document <= html.H1("Memes Party")
+document <= html.IMG(src="https://i.ytimg.com/vi/EJTg0zwCVEE/hq720.jpg?sqp=-oaymwEXCK4FEIIDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLDCMZ8V-7TMUhM-dRnsoVr-OvQq_g", width="400px")
+document <= html.BR()
+document <= html.BR()
+document <= html.IMG(src="https://static.tvtropes.org/pmwiki/pub/images/3b44c1c2_be9a_49eb_8e6e_323d67e91011.jpeg", width="400px")
+document <= html.BR()
+document <= html.BR()
+document <= html.IMG(src="https://pbs.twimg.com/media/GBqleseXkAAqXz1.png", width="400px")
+document <= html.BR()
+document <= html.BR()
+document <= html.IMG(src="https://img.wattpad.com/f497fb687295ea5974ce1d26bf315ab805d9b5bf/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f716b436e41704e5a52684d6554673d3d2d383332392e313663616562653332616363663862353239333833373630323035322e6a7067?s=fit&w=720&h=720", width="400px")
+document <= html.BR()
+document <= html.BR()
+document <= html.IMG(src="https://preview.redd.it/from-the-official-ace-attorney-twitter-v0-90tlj7qjr65d1.jpeg?auto=webp&s=91019626af77ea070aa25e690110f38977b511a3", width="400px")
+document <= html.BR()
+document <= html.BR()
+document <= html.IMG(src="https://www.iwastesomuchtime.com/wp-content/uploads-webpc/uploads/sites/68/2024/10/Ace-Attorney-Memes-4-93735.png.webp", width="400px")
+
+
+</script>
+
+
+</body>
+
+</html>
